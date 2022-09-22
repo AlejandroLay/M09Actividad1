@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    background-color: #272727;
+    font-family: 'Oswald', sans-serif;
 }
 
 
@@ -49,8 +48,8 @@ nav ul li a {
 
 nav ul li a.active,
 nav ul li a:hover {
-    color: #111;
-    background: #fff;
+    color: white;
+    background: #272727;
 }
 
 nav .menu-btn i {
@@ -140,7 +139,7 @@ input[type="checkbox"] {
 /* Slideshow container */
 
 .slideshow-container {
-    max-width: 95%;
+    max-width: 100%;
     position: relative;
     margin: auto;
 }
@@ -218,7 +217,7 @@ input[type="checkbox"] {
 .two-column {
     float: left;
     width: 50%;
-    padding: 6%;
+    padding: 3.5%;
 }
 
 .flex {
@@ -226,13 +225,6 @@ input[type="checkbox"] {
     align-items: center;
     justify-content: center;
     background-color: #333333;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-}
-
-.paddingtext {
-    padding: 3%;
 }
 
 .row:after {
@@ -242,11 +234,37 @@ input[type="checkbox"] {
 }
 
 .textoFOTOS {
-    font-size: 2vw;
+    font-size: 1.8vw;
+    color: white;
 }
 
 @media screen and (max-width:700px) {
     .two-column {
         width: 100%;
     }
+    .four-column {
+        width: 50%;
+    }
+    .h1 {
+        font-size: 6vw;
+    }
+    .h2 {
+        font-size: 5vw;
+    }
+    .h3 {
+        font-size: 4vw;
+    }
+    .header h1 {
+        font-size: 8vw;
+    }
+    .header h2 {
+        font-size: 5vw;
+    }
+}
+
+
+/*SECCION DE CARTA*/
+
+.textoMiraCarta {
+    text-align: center;
 }
