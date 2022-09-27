@@ -9,6 +9,11 @@
 
 /*ESTILOS PARA NAVEGADOR RESPONSIBE*/
 
+.sliderRESPONSIVE {
+    width: 100%;
+    height: auto;
+}
+
 nav {
     display: flex;
     height: 80px;
@@ -23,6 +28,9 @@ nav .logo {
     color: #fff;
     font-size: 35px;
     font-weight: 600;
+    width: 60%;
+    max-width: 150px;
+    height: auto;
 }
 
 nav ul {
@@ -224,7 +232,19 @@ input[type="checkbox"] {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.row {
     background-color: #333333;
+}
+
+.imgRESPONSIVE {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .row:after {
@@ -234,9 +254,28 @@ input[type="checkbox"] {
 }
 
 .textoFOTOS {
-    font-size: 1.8vw;
     color: white;
+    padding: 70px 0;
+    text-align: center;
 }
+
+
+/*************************/
+
+@media screen and (min-width: 601px) {
+    h1.textoFOTOS {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1.textoFOTOS {
+        font-size: 30px;
+    }
+}
+
+
+/*************************/
 
 @media screen and (max-width:700px) {
     .two-column {
