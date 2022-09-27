@@ -210,21 +210,17 @@ input[type="checkbox"] {
     padding: 3.5%;
 }
 
-.flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .row {
     background-color: #333333;
+    color: white;
 }
 
 .imgRESPONSIVE {
     width: 100%;
     max-width: 400px;
     height: auto;
-    display: flex;
+    display: block;
+    margin: auto;
 }
 
 .row:after {
@@ -233,10 +229,9 @@ input[type="checkbox"] {
     clear: both;
 }
 
-.textoFOTOS {
-    color: white;
-    padding: 50px 0;
-    display: flex;
+.TextoEnMedio h1 {
+    margin: auto;
+    width: 100%;
 }
 
 @media screen and (min-width: 601px) {
@@ -254,24 +249,6 @@ input[type="checkbox"] {
 @media screen and (max-width:700px) {
     .two-column {
         width: 100%;
-    }
-    .four-column {
-        width: 50%;
-    }
-    .h1 {
-        font-size: 6vw;
-    }
-    .h2 {
-        font-size: 5vw;
-    }
-    .h3 {
-        font-size: 4vw;
-    }
-    .header h1 {
-        font-size: 8vw;
-    }
-    .header h2 {
-        font-size: 5vw;
     }
 }
 
@@ -377,4 +354,14 @@ input[type="checkbox"] {
         flex: 100%;
         max-width: 100%;
     }
+}
+
+
+/*SECCION DE HORARIO*/
+
+.seccionHORARIO {
+    background-color: #333333;
+    text-align: center;
+    padding: 2.5% 0 0 0;
+    color: white;
 }
