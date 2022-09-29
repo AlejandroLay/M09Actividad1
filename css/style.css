@@ -6,6 +6,10 @@
     font-family: 'Oswald', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body::-webkit-scrollbar {
     display: none;
 }
@@ -22,6 +26,10 @@ body {
     height: auto;
     display: block;
     margin: auto;
+}
+
+.textHORARIO {
+    text-align: center;
 }
 
 
@@ -233,7 +241,7 @@ input[type="checkbox"] {
 
 .imgRESPONSIVE {
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
     height: auto;
     display: block;
     margin: auto;

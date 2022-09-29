@@ -8,24 +8,29 @@
     <link rel="shortcut icon" href="img/penege.png">
     <title>Bar Almansa - Barcelona</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/2cb25f2c39.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="header">
     <header>
         <nav>
-            <img class="logo" src="img/logo.jpg" alt="">
+            <picture>
+                <source srcset="img/hola.jpg" media="(max-width:920px)">
+                <img class="logo" src="img/logo.jpg">
+            </picture>
             <input type="checkbox" id="click">
             <label for="click" class="menu-btn">
             <i class="fas fa-bars"></i>
           </label>
             <ul>
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="#">Carta</a></li>
-                <li><a href="#">Horario</a></li>
+                <li><a class="active" href="#header">Home</a></li>
+                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                <li><a href="#carta">Carta</a></li>
+                <li><a href="#horario">Horario</a></li>
+                <li><a href="#buscar">Encuentranos</a></li>
             </ul>
         </nav>
         <a href="https://wa.me/34635762625/?text=Hola%20buenas,%20estoy%20interesado%20en..." class="float" target="_blank">
@@ -36,28 +41,35 @@
         <div class="slideshow-container">
             <div class="mySlides fade">
                 <div class="numbertext"></div>
-                <img src="img/imgSLIDER/IMAGEN1.jpg" class="sliderRESPONSIVE">
+                <img src="img/imgSLIDER/IMG1.jpg" class="sliderRESPONSIVE">
             </div>
-
             <div class="mySlides fade">
                 <div class="numbertext"></div>
-                <img src="img/imgSLIDER/IMAGEN2.jpg" class="sliderRESPONSIVE">
+                <img src="img/imgSLIDER/IMG2.jpg" class="sliderRESPONSIVE">º
             </div>
-
             <div class="mySlides fade">
                 <div class="numbertext"></div>
-                <img src="img/imgSLIDER/IMAGEN3.jpg" class="sliderRESPONSIVE">
+                <img src="img/imgSLIDER/IMG3.jpg" class="sliderRESPONSIVE">
             </div>
-
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="img/imgSLIDER/IMG4.jpg" class="sliderRESPONSIVE">º
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="img/imgSLIDER/IMG5.jpg" class="sliderRESPONSIVE">
+            </div>
         </div>
         <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
         </div>
     </div>
     <!--SECCIÓN 1-->
-    <div class="row">
+    <div class="row" id="nosotros">
         <div class="two-column TextoEnMedio">
             <h1 class="textoFOTOS">Almansa es un espacio que fundamos con la idea de disfrutar de los pequeños placeres que nos hacen felices: la cerveza, los amigos, los buenos snacks y la buena música.</h1>
         </div>
@@ -68,15 +80,15 @@
     <!--SECCIÓN 2-->
     <div class="row">
         <div class="two-column">
-            <img class="imgRESPONSIVE" src="img/imagenBAR1.jpg" alt="">
+            <img class="imgRESPONSIVE" src="img/imagenBAR2.jpg" alt="">
         </div>
         <div class="two-column TextoEnMedio">
-            <h1 class="textoFOTOS">Almansa es un espacio que fundamos con la idea de disfrutar de los pequeños placeres que nos hacen felices: la cerveza, los amigos, los buenos snacks y la buena música.</h1>
+            <h1 class="textoFOTOS">El concepto que nos hace únicos La calidad y la originalidad son marca de la casa. Una de las claves del éxito de la carta es el pan de receta patentada y que además se hornea en el momento en el que el cliente hace el pedido.</h1>
         </div>
     </div>
     <br>
     <!--SECCION DE DESCARGAR CARTA-->
-    <div class="textoMiraCarta">
+    <div id="carta" class="textoMiraCarta">
         <h1>Mira nuestra carta!</h1>
         <br>
         <button class="button-50" role="button"><a class="descargaMenu" href="cont/Menú Restaurante Almansa.pdf" download="Menú Restaurante Almansa">CARTA</a></button>
@@ -107,14 +119,25 @@
         <div class="two-column">
             <img class="imgHORARIO" src="img/horarioLOGO.png" alt="">
         </div>
-        <div class="two-column textHORARIO">
+        <div id="horario" class="two-column textHORARIO">
             <h1>CONSULTA NUESTRO HORARIO</h1>
             <p>Martes a Domingos - 20:00 a 4:00</p>
             <p>Lunes - Cerramos :(</p>
         </div>
     </div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2980.73612007186!2d-0.900031984628301!3d41.66144307924004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5914b73d3a5f05%3A0x2c2312ce6ab552a7!2sBar%20Almansa!5e0!3m2!1ses!2ses!4v1664303972992!5m2!1ses!2ses"
+    <br>
+    <h1 class="textHORARIO">DONDE PUEDES ENCONTRARNOS?</h1>
+    <br>
+    <iframe id="buscar" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2980.73612007186!2d-0.900031984628301!3d41.66144307924004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5914b73d3a5f05%3A0x2c2312ce6ab552a7!2sBar%20Almansa!5e0!3m2!1ses!2ses!4v1664303972992!5m2!1ses!2ses"
         width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- Copyrights -->
+    <div class="bg-dark py-3 ">
+        <div class="container text-center">
+            <p class="text-muted mb-0 py-2">© 2022 Bar Almasa</p>
+        </div>
+    </div>
+    </footer>
+    <!-- End -->
 </body>
 <script src="js/slider.js"></script>
 
