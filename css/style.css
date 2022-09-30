@@ -6,6 +6,10 @@
     font-family: 'Oswald', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -19,6 +23,7 @@ body {
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
+    overflow-x: hidden;
 }
 
 .imgHORARIO {
@@ -212,7 +217,7 @@ input[type="checkbox"] {
 
 @keyframes fade {
     from {
-        opacity: .4
+        opacity: 1
     }
     to {
         opacity: 1
@@ -405,6 +410,7 @@ input[type="checkbox"] {
     text-align: center;
     font-size: 42.5px;
     box-shadow: 2px 2px 3px #999;
+    z-index: 1;
 }
 
 .float:hover {
